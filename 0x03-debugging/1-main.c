@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - infinite loop
+* main - create an infinite loop
 * Return: 0
 */
 int main(void)
