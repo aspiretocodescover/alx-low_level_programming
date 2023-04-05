@@ -1,20 +1,20 @@
-include "main.h"
+#include "main.h"
 
 /**
- * factorial - returns the factorial of a given number.
- * @n: character
+ * factorial - returns the factorial of a given number
+ * @x: character
  * Return: n
  */
 
-int factorial(int n)
+int factorial(int x)
 {
-if  (n < 0)
+if (x < 0)
 {
-	return (-1);
+return (-1);
 }
-if (n == 0)
+if (x == 0)
 {
-	return (1);
+return (1);
 }
-return (n * factorial(n - 1));
+return (x * factorial(x - 1));
 }
