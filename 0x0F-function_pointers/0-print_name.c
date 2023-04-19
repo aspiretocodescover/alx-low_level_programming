@@ -1,26 +1,17 @@
 /**
  * print_name - Prints a given name
  * @name: Name to print
- * Description: This function takes a name as an argument and prints it to
- * the standard output.
+ * @f: Pointer to function to use for printing
+ * Return: 0
  */
 
-void print_name(char *name)
+void print_name(char *name, void (*f)(char *))
 {
-char *output;
-size_t len;
-
 if (name == NULL)
-exit(1);
+return;
 
-len = strlen(name);
-output = malloc(len + 7); /* "Name: " plus null terminator */
-if (output == NULL)
-exit(1);
+if (f == NULL)
+return;
 
-strcpy(output, "Name: ");
-strcat(output, name);
-
-write(STDOUT_FILENO, output, len + 7);
-free(output);
+f(name);
 }
