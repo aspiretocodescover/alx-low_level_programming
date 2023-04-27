@@ -1,1 +1,1 @@
-more pointers and arrays task
+malloc free
