@@ -8,10 +8,10 @@
  * Return: the number of elements
  */
 
-size_t listint_len(const listint_t *h);
+size_t listint_len(const listint_t *h)
 {
 
-	size_t  a = 0
+	size_t  a = 0;
 
 	while (h != NULL)
 	{
@@ -19,5 +19,5 @@ size_t listint_len(const listint_t *h);
 	a++;
 	}
 
-	return (i);
+	return (a);
 }
